@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/rajatpatra-devops/jenkins-visual-node-app.git'
+                git branch: 'main', url: 'https://github.com/rajatpatra-devops/jenkins-visual-node-app.git'
             }
         }
 
@@ -21,4 +21,3 @@ pipeline {
         }
     }
 }
-
